@@ -1,4 +1,4 @@
-# Fullscreen: Full Stack Software Engineer Take Home Test
+# Trinity AI: Full Stack Software Engineer Take Home Test
 
 To test your ability as a full stack Rails engineer, we decided not not give you a problem with Binary Trees, Linked Lists or string manipulation. Instead we'll give you a Rails application that you must create on your own that reflects a real use case. This is not specifically a UI test so feel free to make the UI as nice or sparse as you have the time for. This should take you less than 2 hours if you have a reasonable experience with Ruby on Rails.
 
@@ -43,4 +43,4 @@ rspec spec # To run the test suite
 
 1. Push your app to Heroku or another similarly free hosting provider so we can see it running live.
 2. Make sure you have committed your changes to the local git repository and zip your changes back up (zip or tar.gz is fine)
-3. Email your Fullscreen contact with the the zip file attached as well as a link to where your project is hosted.
+3. Email your Trinity contact with the github URL as well as a link to where your project is hosted.
