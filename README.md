@@ -44,3 +44,7 @@ rspec spec # To run the test suite
 1. Push your app to Heroku or another similarly free hosting provider so we can see it running live.
 2. Make sure you have committed your changes to the local git repository and zip your changes back up (zip or tar.gz is fine)
 3. Email your Trinity contact with the github URL as well as a link to where your project is hosted.
+
+## Acknowledgement
+
+This was adapted from Fullscreen.
