@@ -17,6 +17,6 @@ videos = Video.all.ids
 User.all.each do |u|
   # watch a few videos
   videos.sample(3).each do |vid|
-    UsersVideo.create(user_id: u.id, video_id: vid)
+    UsersVideo.create(user_id: u.id, video_id: vid, created_at: rand(30).days.ago)
   end
 end
