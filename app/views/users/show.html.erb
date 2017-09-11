@@ -1,0 +1,6 @@
+<h1><%= @user.name %></h1>
+<p>Watched videos: <%= @user.videos.count %></p>
+
+<p>Videos</p>
+
+<%= render 'videos/video_list', videos: @user.videos %>
