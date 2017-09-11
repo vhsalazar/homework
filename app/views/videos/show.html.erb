@@ -1,3 +1,30 @@
 <h1><%= @video.title.capitalize  %></h1>
-<h2>Users</h2>
-<%= render 'users/user_list', users: @video.users %>
+<p><b>Views:</b> <%= @video.users_videos.count %></p>
+<div id="chart" style="height: 250px;"></div>
+<h2>Viewers</h2>
+<%= render 'users/user_list', users: @users %>
+<%= paginate @users %>
+
+<% content_for :javascript do %>
+    <script>
+        var data = <%= raw (@histogram.map do |h|
+          {date: h.date, views: h.views}
+        end.to_json)
+        %>;
+
+        new Morris.Line({
+            // ID of the element in which to draw the chart.
+            element: 'chart',
+            // Chart data records -- each entry in this array corresponds to a point on
+            // the chart.
+            data: data,
+            // The name of the data record attribute that contains x-values.
+            xkey: 'date',
+            // A list of names of data record attributes that contain y-values.
+            ykeys: ['views'],
+            // Labels for the ykeys -- will be displayed when you hover over the
+            // chart.
+            labels: ['Views']
+        });
+    </script>
+<% end %>

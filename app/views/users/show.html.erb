@@ -3,4 +3,4 @@
 
 <p>Videos</p>
 
-<%= render 'videos/video_list', videos: @user.videos %>
+<%= render 'videos/video_list', videos: @user.videos.with_views %>
