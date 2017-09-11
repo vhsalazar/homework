@@ -1,0 +1,20 @@
+{
+  "name": "homework",
+  "homepage": "https://github.com/vhsalazar/homework",
+  "authors": [
+    "Victor H. Salazar <victor@ninjadevs.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "morris.js": "^0.5.1"
+  }
+}
